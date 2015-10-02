@@ -195,7 +195,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
             <div id="groupContent"> <!-- Start of the group content-->
 
                 <div>
-                 
+                 <!-- The tabs could be just links and look like tabs and have the active state on it.-->
                         <ul class="nav nav-tabs"> <!-- Top Tabs -->
                             <li class="active"><a data-toggle="tab" href="#feat">Featured</a></li>
                             <li><a data-toggle="tab" href="#pop">Popular</a></li> 
@@ -224,15 +224,19 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                         
                         <div class="tab-content">
                             <div id="feat" class="tab-pane fade in active"> <!-- featured Tab -->
-                                <div class="col-xs-12  mrgn-tp-sm">
-                                    <a href="#" title="GC2.0 Tools"><img class="mrgn-tp-sm col-sm-2" src="assets/profilePhoto.jpg" alt="GC2.0 Tools"></a>
-                                    <div class="mrgn-tp-sm col-sm-10">
-                                        <h3 class="mrgn-bttm-sm"><a href="#" title="GC2.0 Tools">GC2.0 Tools</a></h3>
-                                        <p class="mrgn-bttm-sm"><i>Open Group | <span>4000 Members</span></i></p>
-                                        <p class="mrgn-bttm-sm">Brownie pastry gummies caramels. Sweet tootsie roll halvah brownie. Biscuit ice cream cheesecake pudding. Pastry bear claw pie cheesecake marzipan fruitcake candy canes icing.</p>
+                                
+                                <!-- Browsing featured groups like this wouldn't need to be in a table. It might increase server load and stuff, and I don't see a lot of value in it -->
+                                <div class="col-xs-12  mrgn-tp-sm"> <!-- Group List Item -->
+                                    <a href="#" title="GC2.0 Tools"><img class="mrgn-tp-sm col-sm-2" src="assets/profilePhoto.jpg" alt="GC2.0 Tools"></a> <!-- Image -->
+                                    <div class="mrgn-tp-sm col-sm-10"> <!-- Word holder thing -->
+                                        <h3 class="mrgn-bttm-sm"><a href="#" title="GC2.0 Tools">GC2.0 Tools</a></h3> <!-- Group Name -->
+                                        <p class="mrgn-bttm-sm"><i>Open Group | <span>4000 Members</span></i></p> <!-- This holds open or closed status, and number of members -->
+                                        <p class="mrgn-bttm-sm">Brownie pastry gummies caramels. Sweet tootsie roll halvah brownie. Biscuit ice cream cheesecake pudding. Pastry bear claw pie cheesecake marzipan fruitcake candy canes icing.</p> <!-- This is the brief Description -->
                                                         
                                     </div>
                                 </div>
+                                
+                                <!-- The rest of these all look the same! -->
                                 
                                 <div class="col-xs-12  mrgn-tp-sm">
                                     <a href="#" title="GC2.0 Tools"><img class="mrgn-tp-sm col-sm-2" src="assets/profilePhoto.jpg" alt="GC2.0 Tools"></a>
@@ -313,16 +317,18 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                                         <tr class="gradeA" role="row"> <!-- Table Row -->
                                             <td>
                                                 <div class="col-xs-12  mrgn-tp-sm">
-                                                    <a href="#" title="GC2.0 Tools"><img class="mrgn-tp-sm col-sm-2" src="assets/profilePhoto.jpg" alt="GC2.0 Tools"></a>
-                                                    <div class="mrgn-tp-sm col-sm-10">
-                                                        <h3 class="mrgn-bttm-sm"><a href="#" title="GC2.0 Tools">GC2.0 Tools</a></h3>
-                                                        <p class="mrgn-bttm-sm"><i>Open Group | <span>4000 Members</span></i></p>
-                                                        <p class="mrgn-bttm-sm"><a href="#">(2) New Blogs</a></p>
+                                                    <a href="#" title="GC2.0 Tools"><img class="mrgn-tp-sm col-sm-2" src="assets/profilePhoto.jpg" alt="GC2.0 Tools"></a> <!-- This is the group icon -->
+                                                    <div class="mrgn-tp-sm col-sm-10"> <!-- Word Holder thing -->
+                                                        <h3 class="mrgn-bttm-sm"><a href="#" title="GC2.0 Tools">GC2.0 Tools</a></h3> <!-- Group Name -->
+                                                        <p class="mrgn-bttm-sm"><i>Open Group | <span>4000 Members</span></i></p> <!-- Open/ Closed Status and member #-->
+                                                        <p class="mrgn-bttm-sm"><a href="#">(2) New Blogs</a></p> <!-- This would be new content in the group that the user hasn't seen yet-->
                                                         
                                                     </div>
                                                 </div>                
                                             </td>                                      
                                         </tr>
+                                        
+                                        <!-- And the rest would be the same :3! -->
                                         
                                         <tr class="gradeA" role="row"> <!-- Table Row -->
                                             <td>
@@ -456,11 +462,11 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 
         </div>
         
-        <!-- Side bar / Members / Events / Activty -->
+       <!-- I broke the side bar but I'll fix it because there is going to be some widget things in it -->
         <div class="col-md-4">
          
             
-      <p>Look a side bar :3</p>
+     
         
         </div>
     </section>
