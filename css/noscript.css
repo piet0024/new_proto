@@ -2,16 +2,10 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.12 - 2015-03-23
+ * v4.0.18 - 2015-09-24
  *
  */
-@charset "utf-8";
-/*!
- * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
- * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.12 - 2015-03-23
- *
- */
+@charset "UTF-8";
 /*
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
@@ -25,6 +19,9 @@
  * Use this file to override Bootstrap variables and WET custom variables.
  * If there is a Bootstrap variable not shown here that you want to override, go to "../lib/bootstrap-sass-official/assets/stylesheets/bootstrap/variables" to view the variables that you can override. Simply copy and paste the variable and its applicable section (if applicable) from the Bootstrap file into this override file and override the variables as applicable.
  */
+#wb-srch, #wb-sm, #wb-sm .nvbar, #wb-sec, .wb-overlay, .mfp-hide {
+  display: block !important; }
+
 /*
  Plugins
  */
@@ -55,12 +52,23 @@
 /*
  * Menu Sass (noscript)
  */
-#wb-srch, #wb-sm, #wb-sm .nvbar, #wb-sec, #wb-info {
-  display: block !important; }
-
 #wb-glb-mn {
   display: none !important; }
 
+/*
+ * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+ * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+ */
+/*
+ * Overlay Sass (noscript)
+ */
+/*
+ * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+ * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+ */
+/*
+ * Lightbox Sass (noscript)
+ */
 /*
  Polyfills
  */
