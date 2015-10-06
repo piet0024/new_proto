@@ -10671,7 +10671,7 @@ a.shr-opn, a.shr-opn:hover {
 
 .tab-content {
     padding: 5px;
-    border: 1px solid #ddd;
+    /*border: 1px solid #ddd;*/
 }
 
 .tab-pane {
