@@ -2669,7 +2669,7 @@ select[multiple].input-lg, .input-group-lg > select[multiple].form-control,
   .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #1c578a;
+    background-color: #047177;
     border-color: #091c2d; }
   .btn-primary:active,
   .btn-primary.active,
@@ -10509,7 +10509,7 @@ a.shr-opn, a.shr-opn:hover {
     }
     
     .btn-custom-cta:hover {
-        background: #283e56;
+        background: #047177;
         color: white;
     }
     
@@ -10530,8 +10530,8 @@ a.shr-opn, a.shr-opn:hover {
     /******************** Timestamp ********************/
     
     .timeStamp {
-        color: #929497;
-        font-size: 13px;
+        color: #606060;
+        font-size: 14px;
     }
     
     /****************************************/
