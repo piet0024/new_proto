@@ -3987,8 +3987,8 @@ tbody.collapse.in {
   .pagination > .active > span:focus {
     z-index: 2;
     color: #fff;
-    background-color: #2572b4;
-    border-color: #2572b4;
+    background-color: #055959;
+    border-color: #055959;
     cursor: default; }
   .pagination > .disabled > span,
   .pagination > .disabled > span:hover,
@@ -4139,7 +4139,7 @@ a.label:focus {
   vertical-align: baseline;
   white-space: nowrap;
   text-align: center;
-  background-color: #767676;
+  background-color: #055959;
   border-radius: 10px; }
   .badge:empty {
     display: none; }
@@ -4540,9 +4540,9 @@ a.list-group-item-danger {
   margin-bottom: 23px;
   background-color: #fff;
   border: 1px solid transparent;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
+  /*border-radius: 4px;*/
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.09); }
 
 .panel-body {
   padding: 15px; }
@@ -11059,7 +11059,7 @@ Carousel
   @title: All screen views
  */
   body {
-    background: #f9f9f9; }
+    background: #fcfcfc; }
   .overlay-def .modal-header {
     background: #2e5274; }
   .wb-sl {

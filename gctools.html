@@ -8,7 +8,7 @@
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
 
-		<title>GCConnex - Group Name's Group Page
+		<title>GCConnex - GC2.0 Tools Group 
 </title>
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
 		<!-- Meta data -->
@@ -63,7 +63,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
         </section>
         <div class="row">
             <div class="brand col-xs-8 col-sm-9 col-md-6">
-                <a href="#"><img src="assets/gcconnex_logo.png" alt="GCconnex Logo"><span class="wb-inv">GCconnex</span></a>
+                <a href="pageLayout.html"><img src="assets/gcconnex_logo.png" alt="GCconnex Logo"><span class="wb-inv">GCconnex</span></a>
             </div>
             <section class="wb-mb-links col-xs-4 col-sm-3 visible-sm visible-xs" id="wb-glb-mn">
                 <h2>Search and menus</h2>
@@ -91,23 +91,19 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
         </div>
     </div>
     <!--data-ajax-fetch="./ajax/sitemenu-en.html"-->
-	<nav role="navigation" id="wb-sm" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
-		<div class="container nvbar">
-	<h2>Topics menu</h2>
-	<div class="row">
-		<ul class="list-inline menu">
-
-			<li><a href="#">Groups</a></li>
-			<li><a href="#">Blogs</a></li>
-			<li><a href="#">The Wire</a></li>
-            <li><a href="#">Jobs Marketplace</a></li>
-            <li><a href="#">Help</a></li>
-
-		</ul>
-        
-	</div>
-</div>
-
+	<nav role="navigation" id="wb-sm"  data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+		<div class="container nvbar"> <!-- container for screen reader text and list -->
+            <h2>Topics menu</h2>
+            <div class="row">
+                <ul class="list-inline menu">
+                    <li><a href="groups.html">Groups</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="thewire.html">The Wire</a></li>
+                    <li><a href="#">Jobs Marketplace</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
 	</nav>
 
 <!-- Putting the breadcrumbs in a comment for now -->
@@ -118,7 +114,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 	<div class="row">
 		<ol class="breadcrumb">
 			<li>
-				<a href="index%20LoggedUser.html">Home</a>
+				<a href="pageLayout.html">Home</a>
 			</li>
 
 	
@@ -142,23 +138,19 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
     <!-- We need to add the id wb-cont to wherever the main content is -->
     
     <nav role="navigation" id="userMenu" class="col-md-12 mrgn-tp-sm    text-right">
-
             <ul class="list-unstyled list-inline">
-                
-                <li class="brdr-rght"><a href="profile.html" title="My Profile"><img src="assets/profileIcon-01.png" class="mrgn-rght-sm" alt="Profile Picture"><p class="hidden-sm hidden-xs">Profile</p></a></li>
-                <li class="brdr-rght"><a href="#" title="My Messages"><img src="assets/messIcon-01.png" class="mrgn-rght-sm" alt="Messages Icon"><p class="hidden-sm hidden-xs">Messages</p></a></li>
-                <li class="brdr-rght"><a href="#" title="My Colleagues"><img src="assets/collIcon-01.png" class="mrgn-rght-sm" alt="Colleagues Icon"><p class="hidden-sm hidden-xs">Colleagues</p></a></li>
-                
+                <li class="brdr-rght"><a href="profile.html" title="My Profile"><span class="badge">FL </span><p class="hidden-sm hidden-xs">FirstName LastName</p></a></li>
+                <li class="brdr-rght"><a href="messages_in.html" title="My Messages"><img src="assets/messIcon-01.png" class="mrgn-rght-sm" alt="Messages Icon"><p class="hidden-sm hidden-xs">Messages</p></a></li>
+                <li class="brdr-rght"><a href="coll.html" title="My Colleagues"><img src="assets/collIcon-01.png" class="mrgn-rght-sm" alt="Colleagues Icon"><p class="hidden-sm hidden-xs">Colleagues</p></a></li>
                 <li class="dropdown">
                     <a href="#" data-toggle="dropdown" class="dropdown-toggle" title="My Settings"><img src="assets/sysIcon-01.png" alt="Settings Icon"><p class="hidden-sm hidden-xs">Settings</p><b class="caret"></b></a>
                     <ul class="dropdown-menu pull-right">
-                        <li><a href="#">Account Settings</a></li>
+                        <li><a href="settings.html">Account Settings</a></li>
                         <li class="divider"></li>
-                        <li><a href="index%20AnonUser.html">Sign out</a></li>
+                        <li><a href="#">Sign out</a></li>
                     </ul>
                 </li>
             </ul>
-
     </nav>
 	
     
@@ -338,7 +330,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                         <div id="discussTab" class="tab-pane fade clearfix"> <!-- Discussion Tab -->
                             
                             <div>
-                                <button type="button" class="btn btn-custom-cta btn-sm add-margin">Start a Discussion</button> <!-- Start a discussion button -->
+                                 <a href="#" class="btn btn-primary add-margin">Start a Discussion</a> <!-- Start a discussion button -->
                                 <ul class="list-inline text-right">
                                     <li><p>Newest | <a href="">Oldest</a></p></li>
                                     <li><p> <label>Show <select><option>5</option>
@@ -408,7 +400,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                             
                             <div>
                                 <!-- File upload button-->
-                                 <button type="button" class="btn btn-custom-cta btn-sm add-margin">Upload a File</button>
+                                  <a href="#" class="btn btn-primary add-margin">Upload a File</a>
                                 <table class="wb-tables table"> <!-- File Table -->
                                     <thead> <!-- This is a WET 4 table plugin that will allow you to sort files -->
                                         <tr role="row">
@@ -496,7 +488,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                         <div id="blogTab" class="tab-pane fade clearfix"> <!-- Blog Tab -->
                             <!-- This code is mostly copies from the discussion tab as it would share a similar layout -->
                             <div>
-                                 <button type="button" class="btn btn-custom-cta btn-sm add-margin">Start a Blog</button>
+                                 <a href="create_blog_gc.html" class="btn btn-primary add-margin">Start a Blog</a>
                                 <ul class="list-inline text-right">
                                 <li><p>Newest | <a href="">Oldest</a></p></li>
                                 <li><p> <label>Show <select><option>5</option>
@@ -567,7 +559,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                         
                         
                         <div id="eventTab" class="tab-pane fade clearfix"> 
-                            <button type="submit" class="btn btn-custom-cta btn-sm add-margin">Add Event</button>
+                             <a href="#" class="btn btn-primary add-margin">Add Event</a>
                             <ul class="list-inline text-right">
                                 <li><p>Newest | <a href="">Oldest</a></p></li>
                                 <li><p><label> Show <select><option>5</option>
@@ -652,7 +644,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                         
                         
                         <div id="pollTab" class="tab-pane fade clearfix"> <!-- Poll Tab -->
-                            <button type="submit" class="btn btn-custom-cta btn-sm add-margin">Add Poll</button>
+                             <a href="#" class="btn btn-primary add-margin">Add Poll</a>
                         <ul class="list-inline text-right">
                                 <li><p>Newest | <a href="">Oldest</a></p></li>
                                 <li><p> <label>Show <select><option>5</option>
@@ -731,7 +723,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                         
                         
                         <div id="pageTab" class="tab-pane fade clearfix"> <!-- Page Tab -->
-                            <button type="submit" class="btn btn-custom-cta btn-sm add-margin">Add Page</button>
+                             <a href="create_blog_gc.html" class="btn btn-primary add-margin">Add Page</a>
                         <ul class="list-inline text-right">
                                 <li><p>Newest | <a href="">Oldest</a></p></li>
                                 <li><p><label>Show <select><option>5</option>
@@ -862,6 +854,42 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
     
     <!-- Side Menu -->
     <section class="col-md-4">
+        <div id="members" class="panel panel-custom"> <!-- Members Panel -->
+            <div class="panel-heading">
+                <h2 class="">Members</h2>
+            </div>
+                <!-- might be able to get this into a list instead -->
+                <div id="memberTeaser" class="clearfix panel-body">
+                    <div class="img-tn"><a href="profile.html"><img src="assets/member_img.gif" alt="Member name" class="img-thumbnail" title="This Person's Profile"></a></div>
+                    <div class="img-tn"><a href="profile.html"><img src="assets/member_img.gif" alt="Member name" class="img-thumbnail" title="This Person's Profile"></a></div>
+                    <div class="img-tn"><a href="profile.html"><img src="assets/member_img.gif" alt="Member name" class="img-thumbnail" title="This Person's Profile"></a></div>
+                    <div class="img-tn"><a href="profile.html"><img src="assets/member_img.gif" alt="Member name" class="img-thumbnail" title="This Person's Profile"></a></div>
+                    <div class="img-tn"><a href="profile.html"><img src="assets/member_img.gif" alt="Member name" class="img-thumbnail" title="This Person's Profile"></a></div>
+                    
+                    <div class="img-tn"><a href="profile.html"><img src="assets/member_img.gif" alt="Member name" class="img-thumbnail" title="This Person's Profile"></a></div>
+                    <div class="img-tn"><a href="profile.html"><img src="assets/member_img.gif" alt="Member name" class="img-thumbnail" title="This Person's Profile"></a></div>
+                    <div class="img-tn"><a href="profile.html"><img src="assets/member_img.gif" alt="Member name" class="img-thumbnail" title="This Person's Profile"></a></div>
+                    <div class="img-tn"><a href="profile.html"><img src="assets/member_img.gif" alt="Member name" class="img-thumbnail" title="This Person's Profile"></a></div>
+                    <div class="img-tn"><a href="profile.html"><img src="assets/member_img.gif" alt="Member name" class="img-thumbnail" title="This Person's Profile"></a></div>
+                    
+                    <div class="img-tn"><a href="profile.html"><img src="assets/member_img.gif" alt="Member name" class="img-thumbnail" title="This Person's Profile"></a></div>
+                    <div class="img-tn"><a href="profile.html"><img src="assets/member_img.gif" alt="Member name" class="img-thumbnail" title="This Person's Profile"></a></div>
+                    <div class="img-tn"><a href="profile.html"><img src="assets/member_img.gif" alt="Member name" class="img-thumbnail" title="This Person's Profile"></a></div>
+                    <div class="img-tn"><a href="profile.html"><img src="assets/member_img.gif" alt="Member name" class="img-thumbnail" title="This Person's Profile"></a></div>
+                    <div class="img-tn"><a href="profile.html"><img src="assets/member_img.gif" alt="Member name" class="img-thumbnail" title="This Person's Profile"></a></div>
+                
+                    
+               <!-- This needs some work -->
+                </div>
+                <div class="panel-footer text-right">
+                    <a href="#" title="Colleagues">View More(#)</a>
+                </div>
+              
+                
+               
+            </div>
+        
+        
         <div class="panel panel-custom">
             <!-- Panel heading -->
             <header class="panel-heading">
