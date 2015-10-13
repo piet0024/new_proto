@@ -8564,7 +8564,7 @@ table.dataTable {
     .dataTables_wrapper .dataTables_paginate .paginate_button {
       background-color: #eaebed;
       border: 1px solid #dcdee1;
-      color: #00BCD4;
+      color: #047177;
       cursor: pointer;
       display: inline-block;
       line-height: 1.4375;
@@ -8574,17 +8574,17 @@ table.dataTable {
       position: relative;
       text-decoration: none; }
       .dataTables_wrapper .dataTables_paginate .paginate_button.current {
-        background-color: #2572b4;
-        border-color: #2572b4;
+        background-color: #055959;
+        border-color: #047177;
         color: #fff;
         cursor: default;
         z-index: 2; }
       .dataTables_wrapper .dataTables_paginate .paginate_button:hover,
       .dataTables_wrapper .dataTables_paginate .paginate_button:focus,
       .dataTables_wrapper .dataTables_paginate .paginate_button:active {
-        background-color: #d4d6da;
+        background-color: #047177;
         border-color: #bbbfc5;
-        color: #335075; }
+        color: #fff; }
   .dataTables_wrapper .dataTables_processing {
     background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(25%, rgba(255, 255, 255, 0.9)), color-stop(75%, rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0)));
     background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 0) 100%);
