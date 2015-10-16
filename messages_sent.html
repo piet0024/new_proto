@@ -8,7 +8,7 @@
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
 
-		<title>GCConnex - My Groups
+		<title>GCConnex - My Messages - Sent
 </title>
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
 		<!-- Meta data -->
@@ -119,7 +119,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 
 	
 			<li>
-				Groups
+				Messages - Sent
 			</li>
 		
 		</ol>
@@ -154,87 +154,62 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
     <!-- Main Content -->
     <section class="col-md-8 mrgn-bttm-md" id="wb-cont"> <!-- Left Column -->
         <div class="clearfix"> <!-- clearfix clearly fixes everything -->
-         <h1>Groups</h1>
-            <a href="create_group.html" class="btn btn-primary btn-lg mrgn-tp-sm">Create a Group</a>
+         <h1>Messages</h1>
+            <a href="create_group.html" class="btn btn-primary btn-lg mrgn-tp-sm">Compose a Message</a>
         <ul class="nav nav-tabs mrgn-tp-md"> <!-- top Tabs -->
-            <li role="presentation" ><a href="groups.html">Featured</a></li>
-            <li role="presentation"><a href="#">Popular</a></li>
-            <li role="presentation"><a href="#">Suggested</a></li>
-            <li class="dropdown" > <!-- More dropdown. This works with the bootstrap javascript tag at the bottom of this page-->
-                <a data-toggle="dropdown" class="dropdown-toggle" href="#">Personal<b class="caret"></b></a>
-                    <ul class="dropdown-menu pull-right">
-                        <li class="active"><a data-toggle="tab" href="#">My Groups</a></li>
-                        <li><a data-toggle="tab" href="#">Groups I Own</a></li>
-                        <li><a data-toggle="tab" href="#">Invitations</a></li>
-                                    
-                </ul>
-            </li>
+            <li role="presentation" ><a href="messages_in.html">Inbox</a></li>
+            <li role="presentation" class="active"><a href="#">Sent</a></li>
+
         </ul>
         
         <div> <!-- start of body content -->
-                                  
-                                <table class="wb-tables table table-hover"> <!-- My groups Table -->
-                                    <thead> 
+                            <table class="wb-tables table table-striped table-hover" data-wb-tables='{ "ordering" : false }'>
+                                    <thead> <!-- This is a WET 4 table plugin that will allow you to sort files -->
                                         <tr role="row">
-                                        
-                                            <th class="sorting_asc" tabindex="0" aria-controls="wb-auto-1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rending engine: activate for ascending sort">My Groups</th>
-                                           
+                                            <th tabindex="0" aria-controls="wb-auto-1" rowspan="1" colspan="1">Select</th>
+                                            <th tabindex="0" aria-controls="wb-auto-1" rowspan="1" colspan="1">To</th>
+                                            <th tabindex="0" aria-controls="wb-auto-1" rowspan="1" colspan="1">Subject</th>
+                                            <th tabindex="0" aria-controls="wb-auto-1" rowspan="1" colspan="1">Time</th>
+                                            <th tabindex="0" aria-controls="wb-auto-1" rowspan="1" colspan="1">Delete</th>
                                             
                                         </tr>
                                     </thead>
                                     
                                     <tbody>
                                         <tr class="gradeA" role="row"> <!-- Table Row -->
-                                            <td>
-                                                <div class="col-xs-12  mrgn-tp-sm">
-                                                    <a href="#" title="GC2.0 Tools"><img class="mrgn-tp-sm col-sm-2" src="assets/profilePhoto.jpg" alt="GC2.0 Tools"></a> <!-- This is the group icon -->
-                                                    <div class="mrgn-tp-sm col-sm-10"> <!-- Word Holder thing -->
-                                                        <h3 class="mrgn-bttm-sm"><a href="gctools.html" title="GC2.0 Tools">GC2.0 Tools</a></h3> <!-- Group Name -->
-                                                        <p class="mrgn-bttm-sm"><i>Open Group | <span>4000 Members</span></i></p> <!-- Open/ Closed Status and member #-->
-                                                        <p class="mrgn-bttm-sm"><a href="#">(2) New Blogs</a></p> <!-- This would be new content in the group that the user hasn't seen yet-->
-                                                        
-                                                    </div>
-                                                </div>                
-                                            </td>                                      
+                                            <td><label><input type="checkbox"><span class="wb-inv">Select this message</span></label></td> <!-- File type-->
+                                            <td><a href="#">Jane Doe</a></td> <!-- File Name -->
+                                            <td><a href="#">This is the subject of this message!</a></td><!-- File status -->
+                                            <td>2 hours ago</td><!-- File size -->
+                                            <td><a href="#"><span title="Download this file" class="glyphicon glyphicon-remove" aria-hidden="true"></span><span class="wb-inv">Delete this message</span></a></td> <!-- Download link -->
                                         </tr>
-                                        
-                                        <!-- And the rest would be the same :3! -->
-                                        
                                         <tr class="gradeA" role="row"> <!-- Table Row -->
-                                            <td>
-                                                <div class="col-xs-12  mrgn-tp-sm">
-                                                    <a href="#" title="GC2.0 Tools"><img class="mrgn-tp-sm col-sm-2" src="assets/profilePhoto.jpg" alt="GC2.0 Tools"></a>
-                                                    <div class="mrgn-tp-sm col-sm-10">
-                                                        <h3 class="mrgn-bttm-sm"><a href="#" title="GC2.0 Tools">Clicks and Tips</a></h3>
-                                                        <p class="mrgn-bttm-sm"><i>Open Group | <span>4000 Members</span></i></p>
-                                                        <p class="mrgn-bttm-sm"><a href="#">(2) New Blogs</a></p>
-                                                        
-                                                    </div>
-                                                </div>                
-                                            </td>                                      
+                                            <td><label><input type="checkbox"><span class="wb-inv">Select this message</span></label></td> <!-- File type-->
+                                            <td><a href="#">John Doe</a></td> <!-- File Name -->
+                                            <td><a href="#">This is the subject of this message!</a></td><!-- File status -->
+                                            <td>2 hours ago</td><!-- File size -->
+                                            <td><a href="#"><span title="Download this file" class="glyphicon glyphicon-remove" aria-hidden="true"></span><span class="wb-inv">Delete this message</span></a></td> <!-- Download link -->
                                         </tr>
-   
-                                        
                                         <tr class="gradeA" role="row"> <!-- Table Row -->
-                                            <td>
-                                                <div class="col-xs-12  mrgn-tp-sm">
-                                                    <a href="#" title="GC2.0 Tools"><img class="mrgn-tp-sm col-sm-2" src="assets/profilePhoto.jpg" alt="GC2.0 Tools"></a>
-                                                    <div class="mrgn-tp-sm col-sm-10">
-                                                        <h3 class="mrgn-bttm-sm"><a href="#" title="GC2.0 Tools">Blueprint 2020</a></h3>
-                                                        <p class="mrgn-bttm-sm"><i>Open Group | <span>4000 Members</span></i></p>
-                                                        <p class="mrgn-bttm-sm"><a href="#">(2) New Blogs</a></p>
-                                                        
-                                                    </div>
-                                                </div>                
-                                            </td>                                      
+                                            <td><label><input type="checkbox"><span class="wb-inv">Select this message</span></label></td> <!-- File type-->
+                                            <td><a href="#">Jane Doe</a></td> <!-- File Name -->
+                                            <td><a href="#">This is the subject of this message!</a></td><!-- File status -->
+                                            <td>2 hours ago</td><!-- File size -->
+                                            <td><a href="#"><span title="Download this file" class="glyphicon glyphicon-remove" aria-hidden="true"></span><span class="wb-inv">Delete this message</span></a></td> <!-- Download link -->
                                         </tr>
+
+
+
                                         
 
-                                 
                                     </tbody>
                                  </table>
             
-            
+                        <div class="btn-group mrgn-bttm-md mrgn-tp-md pull-right" role="group" aria-label="message tools">
+                            <button type="button" class="btn btn-default">Toggle All</button>
+                            <button type="button" class="btn btn-default">Mark Read</button>
+                            <button type="button" class="btn btn-default">Delete Selected</button>
+                        </div>
         </div>
         
 
@@ -249,85 +224,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
     
     <!-- Side Menu -->
     <section class="col-md-4">
-        <!-- Suggested groups panel -->
-        <div class="panel panel-custom">
-            <!-- Panel heading -->
-            <header class="panel-heading">
-                <h2 class="">Suggested Groups</h2>
-            </header>
-            <!-- Panel Body -->
-            <div class="panel-body">
-                <div class="col-xs-12 mrgn-tp-sm">
-                    <a href="" title="Group Profile"><img class="mrgn-tp-sm col-sm-2" src="assets/groupPhoto.jpg" alt="Group Profile Picture"></a>
-                    <div class="mrgn-tp-sm col-sm-10">
-                        <p class="mrgn-bttm-sm"><a href="" title="Group Profile">Group Name</a></p>
-                        <p class="mrgn-bttm-sm"><i>Status # members</i></p>
-                        <p class="mrgn-bttm-sm timeStamp"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</i></p>
-                    </div>
-                </div>
-                <div class="col-xs-12  mrgn-tp-sm">
-                    <a href="" title="Group Profile"><img class="mrgn-tp-sm col-sm-2" src="assets/groupPhoto.jpg" alt="Group Profile Picture"></a>
-                    <div class="mrgn-tp-sm col-sm-10">
-                        <p class="mrgn-bttm-sm"><a href="" title="Group Profile">Group Name</a></p>
-                        <p class="mrgn-bttm-sm"><i>Status # members</i></p>
-                        <p class="mrgn-bttm-sm timeStamp"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</i></p>
-                    </div>
-                </div>
-                <div class="col-xs-12  mrgn-tp-sm">
-                    <a href="" title="Group Profile"><img class="mrgn-tp-sm col-sm-2" src="assets/groupPhoto.jpg" alt="Group Profile Picture"></a>
-                    <div class="mrgn-tp-sm col-sm-10">
-                        <p class="mrgn-bttm-sm"><a href="" title="Group Profile">Group Name</a></p>
-                        <p class="mrgn-bttm-sm"><i>Status # members</i></p>
-                        <p class="mrgn-bttm-sm timeStamp"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</i></p>
-                    </div>
-                </div>              
-            </div>   
-            <!-- Panel Footer -->
-            <div class="panel-footer text-right">
-                <a href="" title="Suggested groups">View More</a>
-            </div>
-        </div>
-        
-                <!-- Suggested groups panel -->
-        <div class="panel panel-custom">
-            <!-- Panel heading -->
-            <header class="panel-heading">
-                <h2 class="">Featured Groups</h2>
-            </header>
-            <!-- Panel Body -->
-            <div class="panel-body">
-                <div class="col-xs-12 mrgn-tp-sm">
-                    <a href="" title="Group Profile"><img class="mrgn-tp-sm col-sm-2" src="assets/groupPhoto.jpg" alt="Group Profile Picture"></a>
-                    <div class="mrgn-tp-sm col-sm-10">
-                        <p class="mrgn-bttm-sm"><a href="" title="Group Profile">Group Name</a></p>
-                        <p class="mrgn-bttm-sm"><i>Status # members</i></p>
-                        <p class="mrgn-bttm-sm timeStamp"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</i></p>
-                    </div>
-                </div>
-                <div class="col-xs-12  mrgn-tp-sm">
-                    <a href="" title="Group Profile"><img class="mrgn-tp-sm col-sm-2" src="assets/groupPhoto.jpg" alt="Group Profile Picture"></a>
-                    <div class="mrgn-tp-sm col-sm-10">
-                        <p class="mrgn-bttm-sm"><a href="" title="Group Profile">Group Name</a></p>
-                        <p class="mrgn-bttm-sm"><i>Status # members</i></p>
-                        <p class="mrgn-bttm-sm timeStamp"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</i></p>
-                    </div>
-                </div>
-                <div class="col-xs-12  mrgn-tp-sm">
-                    <a href="" title="Group Profile"><img class="mrgn-tp-sm col-sm-2" src="assets/groupPhoto.jpg" alt="Group Profile Picture"></a>
-                    <div class="mrgn-tp-sm col-sm-10">
-                        <p class="mrgn-bttm-sm"><a href="" title="Group Profile">Group Name</a></p>
-                        <p class="mrgn-bttm-sm"><i>Status # members</i></p>
-                        <p class="mrgn-bttm-sm timeStamp"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</i></p>
-                    </div>
-                </div>              
-            </div>   
-            <!-- Panel Footer -->
-            <div class="panel-footer text-right">
-                <a href="" title="Suggested groups">View More</a>
-            </div>
-        </div>
-
-        
+   
         
     </section>	
 

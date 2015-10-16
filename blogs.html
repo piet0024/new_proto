@@ -8,7 +8,7 @@
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
 
-		<title>GCConnex - Group Name's Group Page
+		<title>GCConnex - All Site Blogs
 </title>
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
 		<!-- Meta data -->
@@ -63,7 +63,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
         </section>
         <div class="row">
             <div class="brand col-xs-8 col-sm-9 col-md-6">
-                <a href="#"><img src="assets/gcconnex_logo.png" alt="GCconnex Logo"><span class="wb-inv">GCconnex</span></a>
+                <a href="pageLayout.html"><img src="assets/gcconnex_logo.png" alt="GCconnex Logo"><span class="wb-inv">GCconnex</span></a>
             </div>
             <section class="wb-mb-links col-xs-4 col-sm-3 visible-sm visible-xs" id="wb-glb-mn">
                 <h2>Search and menus</h2>
@@ -91,23 +91,19 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
         </div>
     </div>
     <!--data-ajax-fetch="./ajax/sitemenu-en.html"-->
-	<nav role="navigation" id="wb-sm" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
-		<div class="container nvbar">
-	<h2>Topics menu</h2>
-	<div class="row">
-		<ul class="list-inline menu">
-
-			<li><a href="#">Groups</a></li>
-			<li><a href="#">Blogs</a></li>
-			<li><a href="#">The Wire</a></li>
-            <li><a href="#">Jobs Marketplace</a></li>
-            <li><a href="#">Help</a></li>
-
-		</ul>
-        
-	</div>
-</div>
-
+	<nav role="navigation" id="wb-sm"  data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+		<div class="container nvbar"> <!-- container for screen reader text and list -->
+            <h2>Topics menu</h2>
+            <div class="row">
+                <ul class="list-inline menu">
+                    <li><a href="groups.html">Groups</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="thewire.html">The Wire</a></li>
+                    <li><a href="#">Jobs Marketplace</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
 	</nav>
 
 <!-- Putting the breadcrumbs in a comment for now -->
@@ -118,7 +114,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 	<div class="row">
 		<ol class="breadcrumb">
 			<li>
-				<a href="index%20LoggedUser.html">Home</a>
+				<a href="pageLayout.html">Home</a>
 			</li>
 
 	
@@ -139,23 +135,19 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
     <!-- We need to add the id wb-cont to wherever the main content is -->
     
     <nav role="navigation" id="userMenu" class="col-md-12 mrgn-tp-sm    text-right">
-
             <ul class="list-unstyled list-inline">
-                
-                <li class="brdr-rght"><a href="profile.html" title="My Profile"><img src="assets/profileIcon-01.png" class="mrgn-rght-sm" alt="Profile Picture"><p class="hidden-sm hidden-xs">Profile</p></a></li>
-                <li class="brdr-rght"><a href="#" title="My Messages"><img src="assets/messIcon-01.png" class="mrgn-rght-sm" alt="Messages Icon"><p class="hidden-sm hidden-xs">Messages</p></a></li>
-                <li class="brdr-rght"><a href="#" title="My Colleagues"><img src="assets/collIcon-01.png" class="mrgn-rght-sm" alt="Colleagues Icon"><p class="hidden-sm hidden-xs">Colleagues</p></a></li>
-                
+                <li class="brdr-rght"><a href="profile.html" title="My Profile"><span class="badge">FL </span><p class="hidden-sm hidden-xs">FirstName LastName</p></a></li>
+                <li class="brdr-rght"><a href="messages_in.html" title="My Messages"><img src="assets/messIcon-01.png" class="mrgn-rght-sm" alt="Messages Icon"><p class="hidden-sm hidden-xs">Messages</p></a></li>
+                <li class="brdr-rght"><a href="coll.html" title="My Colleagues"><img src="assets/collIcon-01.png" class="mrgn-rght-sm" alt="Colleagues Icon"><p class="hidden-sm hidden-xs">Colleagues</p></a></li>
                 <li class="dropdown">
                     <a href="#" data-toggle="dropdown" class="dropdown-toggle" title="My Settings"><img src="assets/sysIcon-01.png" alt="Settings Icon"><p class="hidden-sm hidden-xs">Settings</p><b class="caret"></b></a>
                     <ul class="dropdown-menu pull-right">
-                        <li><a href="#">Account Settings</a></li>
+                        <li><a href="settings.html">Account Settings</a></li>
                         <li class="divider"></li>
-                        <li><a href="index%20AnonUser.html">Sign out</a></li>
+                        <li><a href="#">Sign out</a></li>
                     </ul>
                 </li>
             </ul>
-
     </nav>
 	
     
@@ -163,7 +155,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
     <section class="col-md-8 mrgn-bttm-md" id="wb-cont"> <!-- Left Column -->
         <div class="clearfix"> <!-- clearfix clearly fixes everything -->
          <h1>Blogs</h1>
-            <a href="create_group.html" class="btn btn-primary btn-lg mrgn-tp-sm">Add a Blog Post</a>
+            <a href="create_blog.html" class="btn btn-primary btn-lg mrgn-tp-sm">Add a Blog Post</a>
         <ul class="nav nav-tabs mrgn-tp-md"> <!-- top Tabs -->
             <li role="presentation" class="active"><a href="#">All</a></li>
             <li role="presentation"><a href="#">My Blogs</a></li>
@@ -178,9 +170,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                                     <a href="#" title="GC2.0 Tools"><img class="mrgn-tp-sm col-sm-2" src="assets/profilePhoto.jpg" alt="GC2.0 Tools"></a> <!-- Image of the Blog poster! -->
                                     <div class="mrgn-tp-sm col-sm-10"> <!-- Word holder thing -->
                                         <h3 class="mrgn-bttm-sm"><a href="#" title="GC2.0 Tools">This is the best blog title I have ever made ever!</a></h3> <!-- Blog Title Name -->
-                                        <p class="mrgn-bttm-sm">By <a href="">FirstName LastName</a> in the group <a href="">Group Name Here</a> x hours ago</p> <!-- Meta data here. posters name, if this blog belongs to a group and the time stamp -->
+                                        <p class="mrgn-bttm-sm">By <a href="#">FirstName LastName</a> in the group <a href="#">Group Name Here</a> x hours ago</p> <!-- Meta data here. posters name, if this blog belongs to a group and the time stamp -->
                                         
-                                        <ul class="list-inline tags"><li><span class="glyphicon glyphicon-tag"></span></li><li><a href="">Tag,</a></li><li><a href="">Tag,</a></li><li><a href="">Tag</a></li></ul> <!-- Classic tags -->
+                                        <ul class="list-inline tags"><li><span class="glyphicon glyphicon-tag"></span></li><li><a href="#">Tag,</a></li><li><a href="#">Tag,</a></li><li><a href="#">Tag</a></li></ul> <!-- Classic tags -->
                                         <p class="mrgn-bttm-sm timeStamp">Brownie pastry gummies caramels. Sweet tootsie roll halvah brownie. Biscuit ice cream cheesecake pudding. Pastry bear claw pie cheesecake marzipan fruitcake candy canes icing.</p> <!-- This is the brief Description -->
                                                         
                                     </div>
@@ -191,9 +183,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                                     <a href="#" title="GC2.0 Tools"><img class="mrgn-tp-sm col-sm-2" src="assets/profilePhoto.jpg" alt="GC2.0 Tools"></a> 
                                     <div class="mrgn-tp-sm col-sm-10"> 
                                         <h3 class="mrgn-bttm-sm"><a href="#" title="GC2.0 Tools">This is the best blog title I have ever made ever!</a></h3> 
-                                        <p class="mrgn-bttm-sm">By <a href="">FirstName LastName</a> in the group <a href="">Group Name Here</a> x hours ago</p> 
+                                        <p class="mrgn-bttm-sm">By <a href="#">FirstName LastName</a> in the group <a href="#">Group Name Here</a> x hours ago</p> 
                                         
-                                        <ul class="list-inline tags"><li><span class="glyphicon glyphicon-tag"></span></li><li><a href="">Tag,</a></li><li><a href="">Tag,</a></li><li><a href="">Tag</a></li></ul> 
+                                        <ul class="list-inline tags"><li><span class="glyphicon glyphicon-tag"></span></li><li><a href="#">Tag,</a></li><li><a href="#">Tag,</a></li><li><a href="#">Tag</a></li></ul> 
                                         <p class="mrgn-bttm-sm timeStamp">Brownie pastry gummies caramels. Sweet tootsie roll halvah brownie. Biscuit ice cream cheesecake pudding. Pastry bear claw pie cheesecake marzipan fruitcake candy canes icing.</p> 
                                                         
                                     </div>
@@ -202,9 +194,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                                     <a href="#" title="GC2.0 Tools"><img class="mrgn-tp-sm col-sm-2" src="assets/profilePhoto.jpg" alt="GC2.0 Tools"></a> 
                                     <div class="mrgn-tp-sm col-sm-10"> 
                                         <h3 class="mrgn-bttm-sm"><a href="#" title="GC2.0 Tools">This is the best blog title I have ever made ever!</a></h3> 
-                                        <p class="mrgn-bttm-sm">By <a href="">FirstName LastName</a> in the group <a href="">Group Name Here</a> x hours ago</p> 
+                                        <p class="mrgn-bttm-sm">By <a href="#">FirstName LastName</a> in the group <a href="#">Group Name Here</a> x hours ago</p> 
                                         
-                                        <ul class="list-inline tags"><li><span class="glyphicon glyphicon-tag"></span></li><li><a href="">Tag,</a></li><li><a href="">Tag,</a></li><li><a href="">Tag</a></li></ul> 
+                                        <ul class="list-inline tags"><li><span class="glyphicon glyphicon-tag"></span></li><li><a href="#">Tag,</a></li><li><a href="#">Tag,</a></li><li><a href="#">Tag</a></li></ul> 
                                         <p class="mrgn-bttm-sm timeStamp">Brownie pastry gummies caramels. Sweet tootsie roll halvah brownie. Biscuit ice cream cheesecake pudding. Pastry bear claw pie cheesecake marzipan fruitcake candy canes icing.</p> 
                                                         
                                     </div>
@@ -213,21 +205,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                                     <a href="#" title="GC2.0 Tools"><img class="mrgn-tp-sm col-sm-2" src="assets/profilePhoto.jpg" alt="GC2.0 Tools"></a> 
                                     <div class="mrgn-tp-sm col-sm-10"> 
                                         <h3 class="mrgn-bttm-sm"><a href="#" title="GC2.0 Tools">This is the best blog title I have ever made ever!</a></h3> 
-                                        <p class="mrgn-bttm-sm">By <a href="">FirstName LastName</a> in the group <a href="">Group Name Here</a> x hours ago</p> 
+                                        <p class="mrgn-bttm-sm">By <a href="#">FirstName LastName</a> in the group <a href="#">Group Name Here</a> x hours ago</p> 
                                         
-                                        <ul class="list-inline tags"><li><span class="glyphicon glyphicon-tag"></span></li><li><a href="">Tag,</a></li><li><a href="">Tag,</a></li><li><a href="">Tag</a></li></ul> 
-                                        <p class="mrgn-bttm-sm timeStamp">Brownie pastry gummies caramels. Sweet tootsie roll halvah brownie. Biscuit ice cream cheesecake pudding. Pastry bear claw pie cheesecake marzipan fruitcake candy canes icing.</p> 
-                                                        
-                                    </div>
-                                </div>
-            
-                                <div class="col-xs-12  mrgn-tp-md"> 
-                                    <a href="#" title="GC2.0 Tools"><img class="mrgn-tp-sm col-sm-2" src="assets/profilePhoto.jpg" alt="GC2.0 Tools"></a> 
-                                    <div class="mrgn-tp-sm col-sm-10"> 
-                                        <h3 class="mrgn-bttm-sm"><a href="#" title="GC2.0 Tools">This is the best blog title I have ever made ever!</a></h3> 
-                                        <p class="mrgn-bttm-sm">By <a href="">FirstName LastName</a> in the group <a href="">Group Name Here</a> x hours ago</p> 
-                                        
-                                        <ul class="list-inline tags"><li><span class="glyphicon glyphicon-tag"></span></li><li><a href="">Tag,</a></li><li><a href="">Tag,</a></li><li><a href="">Tag</a></li></ul> 
+                                        <ul class="list-inline tags"><li><span class="glyphicon glyphicon-tag"></span></li><li><a href="#">Tag,</a></li><li><a href="#">Tag,</a></li><li><a href="#">Tag</a></li></ul> 
                                         <p class="mrgn-bttm-sm timeStamp">Brownie pastry gummies caramels. Sweet tootsie roll halvah brownie. Biscuit ice cream cheesecake pudding. Pastry bear claw pie cheesecake marzipan fruitcake candy canes icing.</p> 
                                                         
                                     </div>
@@ -237,9 +217,21 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                                     <a href="#" title="GC2.0 Tools"><img class="mrgn-tp-sm col-sm-2" src="assets/profilePhoto.jpg" alt="GC2.0 Tools"></a> 
                                     <div class="mrgn-tp-sm col-sm-10"> 
                                         <h3 class="mrgn-bttm-sm"><a href="#" title="GC2.0 Tools">This is the best blog title I have ever made ever!</a></h3> 
-                                        <p class="mrgn-bttm-sm">By <a href="">FirstName LastName</a> in the group <a href="">Group Name Here</a> x hours ago</p> 
+                                        <p class="mrgn-bttm-sm">By <a href="#">FirstName LastName</a> in the group <a href="#">Group Name Here</a> x hours ago</p> 
                                         
-                                        <ul class="list-inline tags"><li><span class="glyphicon glyphicon-tag"></span></li><li><a href="">Tag,</a></li><li><a href="">Tag,</a></li><li><a href="">Tag</a></li></ul> 
+                                        <ul class="list-inline tags"><li><span class="glyphicon glyphicon-tag"></span></li><li><a href="#">Tag,</a></li><li><a href="#">Tag,</a></li><li><a href="#">Tag</a></li></ul> 
+                                        <p class="mrgn-bttm-sm timeStamp">Brownie pastry gummies caramels. Sweet tootsie roll halvah brownie. Biscuit ice cream cheesecake pudding. Pastry bear claw pie cheesecake marzipan fruitcake candy canes icing.</p> 
+                                                        
+                                    </div>
+                                </div>
+            
+                                <div class="col-xs-12  mrgn-tp-md"> 
+                                    <a href="#" title="GC2.0 Tools"><img class="mrgn-tp-sm col-sm-2" src="assets/profilePhoto.jpg" alt="GC2.0 Tools"></a> 
+                                    <div class="mrgn-tp-sm col-sm-10"> 
+                                        <h3 class="mrgn-bttm-sm"><a href="#" title="GC2.0 Tools">This is the best blog title I have ever made ever!</a></h3> 
+                                        <p class="mrgn-bttm-sm">By <a href="#">FirstName LastName</a> in the group <a href="#">Group Name Here</a> x hours ago</p> 
+                                        
+                                        <ul class="list-inline tags"><li><span class="glyphicon glyphicon-tag"></span></li><li><a href="#">Tag,</a></li><li><a href="#">Tag,</a></li><li><a href="#">Tag</a></li></ul> 
                                         <p class="mrgn-bttm-sm timeStamp">Brownie pastry gummies caramels. Sweet tootsie roll halvah brownie. Biscuit ice cream cheesecake pudding. Pastry bear claw pie cheesecake marzipan fruitcake candy canes icing.</p> 
                                                         
                                     </div>
@@ -271,9 +263,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
             <!-- Panel Body -->
             <div class="panel-body">
                 <div class="col-xs-12 mrgn-bttm-sm">
-                    <a href="" title="Group Profile"><img class="mrgn-tp-sm col-sm-2" src="assets/groupPhoto.jpg" alt="Group Profile Picture"></a>
+                    <a href="#" title="Group Profile"><img class="mrgn-tp-sm col-sm-2" src="assets/groupPhoto.jpg" alt="Group Profile Picture"></a>
                     <div class="mrgn-tp-sm col-sm-10">
-                        <p class="mrgn-bttm-sm"><a href="" title="Group Profile">This is the second best blog title I could think of!</a></p>
+                        <p class="mrgn-bttm-sm"><a href="#" title="Group Profile">This is the second best blog title I could think of!</a></p>
                         <p class="mrgn-bttm-sm">By <a href="#">FirstName Lastname</a></p>
                         <p class="mrgn-bttm-sm timeStamp"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</i></p>
                     </div>
@@ -283,7 +275,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
             </div>   
             <!-- Panel Footer -->
             <div class="panel-footer text-right">
-                <a href="" title="Suggested groups">View More</a>
+                <a href="#" title="Suggested groups">View More</a>
             </div>
         </div>
         
@@ -297,9 +289,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
             <div class="panel-body">
            
                 <div class="col-xs-12 mrgn-bttm-md">
-                    <a href="" title="Group Profile"><img class="mrgn-tp-sm col-sm-2" src="assets/groupPhoto.jpg" alt="Group Profile Picture"></a>
+                    <a href="#" title="Group Profile"><img class="mrgn-tp-sm col-sm-2" src="assets/groupPhoto.jpg" alt="Group Profile Picture"></a>
                     <div class="mrgn-tp-sm col-sm-10">
-                        <p class="mrgn-bttm-sm"><a href="" title="Group Profile">This is the second best blog title I could think of!</a></p>
+                        <p class="mrgn-bttm-sm"><a href="#" title="Group Profile">This is the second best blog title I could think of!</a></p>
                         <p class="mrgn-bttm-sm">By <a href="#">FirstName Lastname</a></p>
                         <p class="mrgn-bttm-sm timeStamp"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</i></p>
                     </div>
@@ -307,9 +299,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
             
             
                 <div class="col-xs-12 mrgn-bttm-md">
-                    <a href="" title="Group Profile"><img class="mrgn-tp-sm col-sm-2" src="assets/groupPhoto.jpg" alt="Group Profile Picture"></a>
+                    <a href="#" title="Group Profile"><img class="mrgn-tp-sm col-sm-2" src="assets/groupPhoto.jpg" alt="Group Profile Picture"></a>
                     <div class="mrgn-tp-sm col-sm-10">
-                        <p class="mrgn-bttm-sm"><a href="" title="Group Profile">This is the second best blog title I could think of!</a></p>
+                        <p class="mrgn-bttm-sm"><a href="#" title="Group Profile">This is the second best blog title I could think of!</a></p>
                         <p class="mrgn-bttm-sm">By <a href="#">FirstName Lastname</a></p>
                         <p class="mrgn-bttm-sm timeStamp"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</i></p>
                     </div>
@@ -318,7 +310,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
               
             <!-- Panel Footer -->
             <div class="panel-footer text-right">
-                <a href="" title="Suggested groups">View More</a>
+                <a href="#" title="Suggested groups">View More</a>
             </div>
         </div>
 
@@ -348,22 +340,22 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 				<section class="col-sm-3">
 	<h3>Contact us</h3>
 	<ul class="list-unstyled">
-		<li><a href="">Questions or comments?</a></li>
+		<li><a href="#">Questions or comments?</a></li>
 	</ul>
 </section>
 <section class="col-sm-3">
 	<h3>About</h3>
 	<ul class="list-unstyled">
-		<li><a href="">About GCconnex</a></li>
-		<li><a href="">Privacy Policy</a></li>
-        <li><a href="">Help</a></li>
+		<li><a href="#">About GCconnex</a></li>
+		<li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Help</a></li>
 	</ul>
 </section>
 <section class="col-sm-3">
 	<h3>News</h3>
 	<ul class="list-unstyled">
-		<li><a href="">Latest GCconnex News</a></li>
-		<li><a href="">Project statistics</a></li>
+		<li><a href="#">Latest GCconnex News</a></li>
+		<li><a href="#">Project statistics</a></li>
 	</ul>
 </section>
 <section class="col-sm-3">

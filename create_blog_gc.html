@@ -11,7 +11,7 @@
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
 
-		<title>Create a Group</title>
+		<title>GCconnex - Create a Blog</title>
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
 		<!-- Meta data -->
 		<meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities" />
@@ -109,7 +109,6 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
             </div>
         </div>
 	</nav>
-
 <!-- Putting the breadcrumbs in a comment for now -->
 	<nav role="navigation" id="wb-bc" property="breadcrumb">
         
@@ -127,7 +126,11 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 			</li>
             
             <li>
-                Create a Group
+				<a href="gctools.html">GC2.0 Tools / Outils GC2.0</a>
+			</li>
+            
+            <li>
+                Add a Blog Post
             </li>
 		
 		</ol>
@@ -159,7 +162,76 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
     
     <!-- Main Content -->
     <section class="col-md-8 mrgn-bttm-md" id="wb-cont">
-        <h1>Create a Group</h1>
+                    <div id="groupInfo" class="clearfix panel panel-custom">
+                <div class="panel-heading clearfix">
+                    <h2 class="pull-left">GC2.0 Tools / Outils GC2.0</h2> <!-- Group Name -->
+                    
+                    <div class="btn-group pull-right"><!-- Join / Membership button -->
+                        <button type="button" data-toggle="dropdown" class="btn btn-custom dropdown-toggle">Member <span class="caret"></span></button>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a href="group%20nonMember.html">Leave Group</a></li>
+                            
+                        </ul>
+                    </div>
+                    
+
+                </div>
+                <div class="panel-body">
+                 <div class=""> <!-- Group Image -->
+                    <img src="assets/group_img.jpg" alt="Group Image" class="img-main col-sm-3">
+              
+                </div>
+                
+                <div class="media-body col-sm-9" id="groupInfo">
+                    <div> <!-- I used some lazy line breaks here to make is look pretty. This needs some work -->
+                        Owner: <a href="#">Owner's Name</a><br>
+                        Group members: 1260<br>
+                        Status: <span class="text-success">Open</span>
+                    </div>
+ 
+                    <div>
+                        <p>Tags</p>
+                        <div><a href="#">Collaboration,</a> <a href="#">gcpedia,</a> <a href="#">gcconnex,</a> <a href="#">goc,</a> <a href="#">GC2.0 tools,</a> <a href="#">outils GC2.0,</a></div>
+                    </div>
+                    
+                </div>
+                </div>
+
+            </div>
+                        <div>
+                 
+                        <ul class="nav nav-tabs"> <!-- Top Tabs -->
+                            <li><a data-toggle="tab" href="#aboutTab">About</a></li>
+                            <li><a data-toggle="tab" href="#discussTab">Discussion <span class="badge">3</span></a></li> <!-- Adding a badge to show there is new activity for users to check out -->
+                            <li><a data-toggle="tab" href="#fileTab">Files</a></li>
+                            <li  class="active"><a data-toggle="tab" href="#blogTab">Blogs <span class="badge">5+</span></a></li>
+                            <li class="dropdown"> <!-- More dropdown. This works with the bootstrap javascript tag at the bottom of this page-->
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">More <b class="caret"></b></a>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a data-toggle="tab" href="#eventTab">Events</a></li>
+                                    <li><a data-toggle="tab" href="#pollTab">Polls</a></li>
+                                    <li><a data-toggle="tab" href="#pageTab">Pages</a></li>
+                                    <li><a data-toggle="tab" href="#photoTab">Photos</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="">
+                                <li class="dropdown " id="">
+                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="groupSearchIcon"><span class="glyphicon glyphicon-search" title="Search in this group"></span><span class="wb-inv">Search in this group</span></a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                      <form class="form" id="groupSearchDropdown"> 
+                                        <label for="groupSearch">Search in this Group</label>
+                                        <input name="username" id="groupSearch" type="text" placeholder="Search Group">                                      
+                                        <button type="button" id="btnSearchGroup" class="btn btn-custom-cta">Search</button>
+                                      </form>
+                                    </div>
+                                  </li>
+                                </li>
+                        </ul>
+                    
+                    </div>
+        
+        <h1>Add a blog post</h1>
         <div>Cupcake ipsum dolor sit amet dragée tiramisu powder. Jelly dessert liquorice gingerbread
 marzipan dessert. Cake dessert cookie biscuit. Muffin tootsie roll bear claw chocolate bar.
 Chocolate cake ice cream cheesecake sweet liquorice caramels bear claw. Donut chupa
@@ -168,21 +240,17 @@ chups candy fruitcake chocolate cake.</div>
         <fieldset class="wb-frmvld"> <!-- The Form goes into this fieldset here  -->
             <form action="#" method="get" id="validation-example">
                 <div class="form-group">
-			     <label for="fname1" class="required"><span class="field-name">Group name</span> <strong class="required">(required)</strong></label>
+			     <label for="fname1" class="required"><span class="field-name">Title</span> <strong class="required">(required)</strong></label>
 			     <input class="form-control" id="fname1" name="fname1" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
 		        </div>
+                
                 <div class="form-group">
-                    <label for="groupImg"><span class="field-name">Group Icon</span></label>
-                    <input type="file" id="groupImg" class="form-control" name="groupImg">
-                    <p class="help-block">You can change the group icon later</p>
-                </div>
-                <div class="form-group">
-                    <label for="bDesc"><span class="field-name">Brief Description</span></label>
+                    <label for="bDesc"><span class="field-name">Excerpt</span></label>
                     <input type="text" class="form-control" id="bDesc" name="bDesc">
                 </div>
                 
                 <div class="form-group">
-                    <label for="lDesc"><span class="field-name">Long Description</span></label>
+                    <label for="lDesc"><span class="field-name">Body of the Blog</span></label>
                     <textarea class="form-control" id="lDesc" name="lDesc" rows="4" cols="50"></textarea>
                 </div>
                 <div class="form=group">
@@ -211,15 +279,15 @@ chups candy fruitcake chocolate cake.</div>
                 <hr>
                 
                 <div class="form-group">
-                    <label for="gMemPer"><span class="field-name">Group Membership Permissions</span></label>
+                    <label for="gMemPer"><span class="field-name">Comments</span></label>
                     <select class="form-control" id="gMemPer" name="gMemPer">
-                        <option>Open - Any user may join</option>
-                        <option>Closed - Users must be invited to join</option>
+                        <option>On</option>
+                        <option>Off</option>
                     </select>
                 </div>
                 
                 <div class="form-group">
-                    <label for="gSee"><span class="field-name">Who can see this group?</span></label>
+                    <label for="gSee"><span class="field-name">Who can see this Blog?</span></label>
                     <select class="form-control" id="gSee" name="gSee">
                         <option>Public</option>
                         <option>Logged In Users</option>
@@ -229,21 +297,15 @@ chups candy fruitcake chocolate cake.</div>
                 </div>
                 
                 <div class="form-group">
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" value="folders" checked>
-                            Allow managment of folders by members
-                        </label>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" value="admins" checked>
-                            Enable group admins to assign other group admins
-                        </label>
-                    </div>
+                    <label for="status"><span class="field-name">Status</span></label>
+                    <select class="form-control" id="status" name="status">
+                        <option>Published</option>
+                        <option>Draft</option>
+                    </select>
                 </div>
                 
-                <button type="submit" class="btn btn-primary">Create Group</button>
+
+                <button type="submit" class="btn btn-custom-cta">Publish Blog Post</button>
             </form>
         
         </fieldset>

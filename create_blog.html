@@ -11,7 +11,7 @@
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
 
-		<title>GCconnex - Tools Settings</title>
+		<title>GCconnex - Create a Blog</title>
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
 		<!-- Meta data -->
 		<meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities" />
@@ -42,7 +42,6 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 	</head>
 	<body vocab="http://schema.org/" typeof="WebPage">
 		
-        <!-- begin skip content -->
         <ul id="wb-tphp">
             <li class="wb-slc">
                 <a class="wb-sl" href="#wb-cont">Skip to main content</a>
@@ -54,8 +53,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 
 
         </ul>
-        
-<header role="banner"> <!-- Start of Header -->
+<header role="banner">
     <div id="wb-bnr" class="container">
         <section id="wb-lng" class="visible-md visible-lg text-right">
             <h2 class="wb-inv">Language selection</h2>
@@ -96,10 +94,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
             </section>
         </div>
     </div>
-<!--data-ajax-fetch="./ajax/sitemenu-en.html"-->
-    
-    
-    <!-- This is the main Navigation Under the blue waves -->
+    <!--data-ajax-fetch="./ajax/sitemenu-en.html"-->
 	<nav role="navigation" id="wb-sm"  data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
 		<div class="container nvbar"> <!-- container for screen reader text and list -->
             <h2>Topics menu</h2>
@@ -114,42 +109,37 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
             </div>
         </div>
 	</nav>
-    <!-- End of Main Navigation -->
-    
-    
-    <!-- These are the breadcrumbs -->
+<!-- Putting the breadcrumbs in a comment for now -->
 	<nav role="navigation" id="wb-bc" property="breadcrumb">
+        
 		<h2>You are here:</h2>
 		<div class="container">
-            <div class="row">
-            <ol class="breadcrumb">
+	<div class="row">
+		<ol class="breadcrumb">
 			<li>
 				<a href="pageLayout.html">Home</a>
 			</li>
 
 	
 			<li>
-				Settings
+				<a href="blogs.html">Blogs</a>
 			</li>
+            
+            <li>
+                Add a Blog Post
+            </li>
 		
 		</ol>
-            </div>
-        </div>
-	</nav>
-    <!-- End of the breadcrumbs -->
-    
-    
-</header> <!-- End of Header -->
+	</div>
+</div>
 
-        
-        
+	</nav>
+
+</header>
+
 <!-- User Menu -->
-        
-        <!-- Main Content Area -->
 <main role="main" property="mainContentOfPage" class="container">
     
-    
-    <!-- Login, Profile, Messages Colleages Etc -->
     <nav role="navigation" id="userMenu" class="col-md-12 mrgn-tp-sm    text-right">
             <ul class="list-unstyled list-inline">
                 <li class="brdr-rght"><a href="profile.html" title="My Profile"><span class="badge">FL </span><p class="hidden-sm hidden-xs">FirstName LastName</p></a></li>
@@ -165,107 +155,154 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                 </li>
             </ul>
     </nav>
-    <!-- End of Login Profile, messages Etc -->
-    
-    
-    
     
     <!-- Main Content -->
-    <section class="col-md-8" id="wb-cont"> <!-- Left Column -->
+    <section class="col-md-8 mrgn-bttm-md" id="wb-cont">
+        <h1>Add a blog post</h1>
+        <div>Cupcake ipsum dolor sit amet dragée tiramisu powder. Jelly dessert liquorice gingerbread
+marzipan dessert. Cake dessert cookie biscuit. Muffin tootsie roll bear claw chocolate bar.
+Chocolate cake ice cream cheesecake sweet liquorice caramels bear claw. Donut chupa
+chups candy fruitcake chocolate cake.</div>
         
-        <h1>Settings</h1>
-        <ul class="nav nav-tabs"> <!-- top Tabs -->
-            <li role="presentation"><a href="settings.html">Account</a></li>
-            <li role="presentation" class="active"><a href="#">Tools</a></li>
-            <li role="presentation"><a href="settings3.html">Notifications</a></li>
-        </ul>
+        <fieldset class="wb-frmvld"> <!-- The Form goes into this fieldset here  -->
+            <form action="#" method="get" id="validation-example">
+                <div class="form-group">
+			     <label for="fname1" class="required"><span class="field-name">Title</span> <strong class="required">(required)</strong></label>
+			     <input class="form-control" id="fname1" name="fname1" type="text" required="required" pattern=".{2,}" data-rule-minlength="2" />
+		        </div>
+                
+                <div class="form-group">
+                    <label for="bDesc"><span class="field-name">Excerpt</span></label>
+                    <input type="text" class="form-control" id="bDesc" name="bDesc">
+                </div>
+                
+                <div class="form-group">
+                    <label for="lDesc"><span class="field-name">Body of the Blog</span></label>
+                    <textarea class="form-control" id="lDesc" name="lDesc" rows="4" cols="50"></textarea>
+                </div>
+                <div class="form=group">
+                    <label for="tags"><span class="field-name">Tags</span></label>
+                    <input type="text" class="form-control" id="tags" name="tags">
+                    <p class="help-block">Separate your keywords with a comma (,)</p>
+                    <p class="help-block">Example: policy, blueprint 2020, collaboration, technology</p>
+                    
+                    <!-- This is a sad attempt to make some kind of overlay to explain tags. I'm not really sure how WET deals with these kind of things so I'm just using a bootstrap drop down and I don't really like it -->
+                    <!--
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            ?
+                            <span class="caret"></span>
+                        </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu5">
+                                <li>Tags are keywords that describe what your group is about. This helps GCconnex find others that may be interested in joining your group.</li>
+                                <li>Separate your keywords with a comma (,)</li>
+                                <li> Example: policy, blueprint 2020, collaboration, technology</li>
+                            </ul>
+                        </div>
+-->
+ 
+                </div>
+                
+                <hr>
+                
+                <div class="form-group">
+                    <label for="gMemPer"><span class="field-name">Comments</span></label>
+                    <select class="form-control" id="gMemPer" name="gMemPer">
+                        <option>On</option>
+                        <option>Off</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="gSee"><span class="field-name">Who can see this Blog?</span></label>
+                    <select class="form-control" id="gSee" name="gSee">
+                        <option>Public</option>
+                        <option>Logged In Users</option>
+                        <option>NO ONE!</option>
+                    </select>
+                
+                </div>
+                
+                <div class="form-group">
+                    <label for="status"><span class="field-name">Status</span></label>
+                    <select class="form-control" id="status" name="status">
+                        <option>Published</option>
+                        <option>Draft</option>
+                    </select>
+                </div>
+                
+
+                <button type="submit" class="btn btn-custom-cta">Publish Blog Post</button>
+            </form>
         
-        <div> <!-- start of settings content -->
+        </fieldset>
 
-           <h1>The Tools would go here, But the tools seem broken live so I don't know how it's suppose to look!</h1> 
+    
 
-            
-
-            
-
-            
-
-            
-            </div>
-        
-        </div>
         
     </section>
-    <!-- End of main left column -->
-    
-    
-    
+
     <!-- Side Menu -->
     <section class="col-md-4">
         
 
         
         
+
+        
     </section>
     
     
+
+
     
 </main>
 
 
-        
-        
-<!-- This footer will be the same the whole time -->
+
 <footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
-	
-    
-    
-    
-    <!-- This contains the bottom Footer Links -->
-    <div class="container">
+	<div class="container">
 		<nav role="navigation">
 			<h2>About this site</h2>
 			<ul id="gc-tctr" class="list-inline">
-	           <li><a rel="license" href="http://wet-boew.github.io/wet-boew/License-en.html">Terms and conditions</a></li>
-	           <li><a href="http://www.tbs-sct.gc.ca/tbs-sct/common/trans-eng.asp">Transparency</a></li>
-            </ul>
+	<li><a rel="license" href="http://wet-boew.github.io/wet-boew/License-en.html">Terms and conditions</a></li>
+	<li><a href="http://www.tbs-sct.gc.ca/tbs-sct/common/trans-eng.asp">Transparency</a></li>
+</ul>
 
 			<div class="row">
 				<section class="col-sm-3">
-	               <h3>Contact us</h3>
-	                   <ul class="list-unstyled">
-		                  <li><a href="">Questions or comments?</a></li>
-	                   </ul>
-                </section>
-                <section class="col-sm-3">
-	               <h3>About</h3>
-	                   <ul class="list-unstyled">
-		                  <li><a href="">About GCconnex</a></li>
-		                  <li><a href="">Privacy Policy</a></li>
-                            <li><a href="">Help</a></li>
-	                   </ul>
-                </section>
-                <section class="col-sm-3">
-	               <h3>News</h3>
-	                   <ul class="list-unstyled">
-		                  <li><a href="">Latest GCconnex News</a></li>
-		                  <li><a href="">Project statistics</a></li>
-	                   </ul>
-                </section>
-                <section class="col-sm-3">
-	               <h3>Stay connected</h3>
-	                   <ul class="list-unstyled">
-		                  <li><a href="https://twitter.com/gcconnex">Twitter</a></li>
-	                   </ul>
-                </section>
+	<h3>Contact us</h3>
+	<ul class="list-unstyled">
+		<li><a href="">Questions or comments?</a></li>
+	</ul>
+</section>
+<section class="col-sm-3">
+	<h3>About</h3>
+	<ul class="list-unstyled">
+		<li><a href="">About GCconnex</a></li>
+		<li><a href="">Privacy Policy</a></li>
+        <li><a href="">Help</a></li>
+	</ul>
+</section>
+<section class="col-sm-3">
+	<h3>News</h3>
+	<ul class="list-unstyled">
+		<li><a href="">Latest GCconnex News</a></li>
+		<li><a href="">Project statistics</a></li>
+	</ul>
+</section>
+<section class="col-sm-3">
+	<h3>Stay connected</h3>
+	<ul class="list-unstyled">
+		<li><a href="https://twitter.com/gcconnex">Twitter</a></li>
+	</ul>
+</section>
 
 			</div>
 		</nav>
 	</div>
     
     
-    
-    <!-- GC Info that will be at the bottom of the footer -->
     <div class="brand">
         <div class="container">
             <div class="row">
@@ -278,13 +315,8 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
             </div>
         </div>
     </div>
-    
-    
-    
 </footer>
 
-        
-        <!-- Extra Scripts at the end of the page -->
 
 		<!--[if gte IE 9 | !IE ]><!-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
@@ -299,10 +331,6 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 
 <![endif]-->
 
-        
-        <!-- End of extra scripts at the end of the page -->
-        
-        
 	</body>
 </html>
 
