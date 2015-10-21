@@ -10698,6 +10698,22 @@ a.shr-opn, a.shr-opn:hover {
     margin-top: 10px;
 }
 
+    .init-badge {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        padding: 8px 0px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+        /* line-height: 1; */
+        vertical-align: baseline;
+        white-space: nowrap;
+        text-align: center;
+        background-color: #055959;
+        border-radius: 25px;
+        margin-right: 7px;
+    }
 
 /*
  * Mobile panel
